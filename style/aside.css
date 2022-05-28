@@ -1,0 +1,27 @@
+aside {
+    position: fixed;
+    right: 1.2vw;
+    bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30vh;
+    z-index: 1;
+}
+
+.aside-chat {
+    background-color: var(--blue);
+    padding: 2.5vh 1.3vw;
+}
+
+.aside-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.aside-chat:hover {
+    cursor: pointer;
+}

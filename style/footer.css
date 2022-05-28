@@ -1,0 +1,13 @@
+footer {
+    position: relative;
+    top: 16vh;
+    margin: 5vh 0vw;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    font-size: 80%;
+    color: var(--blue);
+}

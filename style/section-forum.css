@@ -1,0 +1,46 @@
+#forum {
+    position: relative;
+    top: 16vh;
+    margin: 5vh 0vw;
+    padding: 0 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+#forum h4 {
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    font-size: 190%;
+    color: var(--blue);
+}
+
+.subscribe-input, .subscribe-button {
+    width: 41vw;
+    height: 5.5vh;
+    font-family: "Avenir-LT-W01_35-Light1475496", Arial, sans-serif;
+    font-size: 100%;
+    color: var(--blue);
+}
+
+.subscribe-input {
+    padding: 1.5vh 1.5vw;
+    border: 1px solid var(--blue);
+}
+
+.subscribe-input:hover, .subscribe-input:focus, .subscribe-input:active {
+    outline: 3px solid var(--blue);
+    outline-offset: -3px;
+}
+
+.subscribe-button {
+    background-color: #f88d58;
+    color: var(--light);
+    border: none;
+}
+
+.subscribe-button:hover {
+    transition: 0.6s;
+    background-color: var(--blue);
+}

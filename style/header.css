@@ -1,0 +1,64 @@
+header {
+    position: fixed;
+    height: 16vh;
+    min-height: 90px;
+    display: grid;
+    grid-template-columns: 8vw 17vw 55vw 10vw 5vw 5vw;
+    grid-template-areas: ". logo nav login bag .";
+    background-color: var(--light);
+    align-items: center;
+    z-index: 1;
+    color: var(--lightblue);
+}
+
+.header-logo-text, .header-logo-img {
+    padding-top: 1.5vh;
+    grid-area: logo;
+}
+
+.header-logo-img {
+    background-color: var(--light);
+}
+
+.header-logo-text {
+    width: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 160%;
+}
+
+h1, h2 {
+    color: var(--blue);
+}
+
+.header-nav {
+    grid-area: nav;
+}
+
+.header-nav-list {
+    height: 16vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3.5vw;
+    font-size: 90%;
+}
+
+.header-login {
+    grid-area: login;
+    padding-left: 1vw;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.header-bag {
+    grid-area: bag;
+}

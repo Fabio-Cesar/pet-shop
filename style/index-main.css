@@ -1,0 +1,239 @@
+main {
+    padding: 0 5vw;
+}
+#home-intro, #products, #about, #donate, #customers {
+    position: relative;
+    top: 16vh;
+}
+
+#home-intro {
+    height: 84vh;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../assets/images/background.webp);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 6vw;
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    color: var(--light);
+    line-height: 120%;
+}
+
+.home-intro-button {
+    margin-top: 5vh;
+    height: 6vh;
+    min-height: 30px;
+    width: 11vw;
+    min-width: 120px;
+    background-color: var(--blue);
+    border: none;
+    font-size: 15px;
+    color: var(--light);
+}
+
+.home-intro-button:hover {
+    transition: 0.6s;
+    background-color: var(--light);
+    color: var(--blue);
+    cursor: pointer;
+}
+
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#products h4 {
+    padding-top: 10vh;
+    font-size: 300%;
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    color: var(--blue);
+}
+
+.list-of-new-products {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.new-product {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-product-description {
+    color: var(--lightblue);
+    line-height: 150%;
+}
+
+
+.add-to-cart-button {
+    visibility: hidden;
+    height: 6vh;
+    min-height: 30px;
+    align-self: stretch;
+    background-color: var(--blue);
+    border: none;
+    font-size: 15px;
+    color: var(--light);
+}
+
+.new-product:hover .add-to-cart-button {
+    visibility: visible;
+}
+
+.index-standard-button {
+    margin: 5vh 0;
+    height: 6vh;
+    min-height: 30px;
+    width: 11vw;
+    min-width: 120px;
+    background-color: var(--light);
+    border: 1px solid var(--blue);
+    font-size: 15px;
+    color: var(--blue);
+}
+
+.index-standard-button:hover {
+    transition: 0.6s;
+    background-color: var(--blue);
+    color: var(--light);
+    cursor: pointer;
+}
+
+hr {
+    margin: 5vh 0vw;
+    width: 4vw;
+    border-top: 1px solid var(--blue);
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 5vw 35vw 50vw;
+    grid-template-areas: ". info .";
+    justify-content: center;
+    background-image: url(../assets/images/cat-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-info {
+    padding: 7.5vh 6vw;
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--yellow);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-title {
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    font-size: 190%;
+    line-height: 120%;
+    color: var(--blue);
+}
+
+.about-description {
+    line-height: 140%;
+    letter-spacing: 120%;
+    color: var(--blue);
+}
+
+#donate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5vh;
+}
+
+#donate h4 {
+    padding-top: 10vh;
+    font-size: 350%;
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    color: var(--blue);
+}
+
+.donate-description {
+    font-size: 140%;
+    color: var(--blue);
+}
+
+#customers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.customers-title-img {
+    background-image: url(../assets/images/cat-img-box-1.jpg);
+}
+
+.customers-title-text {
+    background-color: #857C48;
+    color: var(--light);
+}
+
+.first-customer-img {
+    background-image: url(../assets/images/cat-img-box-2.jpeg);
+}
+
+.first-customer-text {
+    background-color: #57557D;
+    color: var(--light);
+}
+
+.second-customer-img {
+    background-image: url(../assets/images/cat-img-box-3.jpg);
+}
+
+.second-customer-text {
+    background-color: #FEC74F;
+    color: var(--blue);
+}
+
+.third-customer-img {
+    background-image: url(../assets/images/cat-img-box-4.jpg);
+}
+
+.third-customer-text {
+    background-color: #F88D58;
+    color: var(--blue);
+}
+
+.customers-title-text, .first-customer-text, .second-customer-text, .third-customer-text {
+    padding: 7vh 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.customers-title-img, .first-customer-img, .second-customer-img, .third-customer-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.customers-important-text {
+    font-family: "DINNeuzeitGroteskLTW01-_812426", Arial, sans-serif;
+    font-size: 190%;
+}
+
+.customers-text {
+    font-size: 70%;
+    line-height: 120%;
+}
+
+.customers-id {
+    font-family: "Avenir-LT-W01_85-Heavy1475544", Arial, sans-serif;
+    font-size: 70%;
+}
